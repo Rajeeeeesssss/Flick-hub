@@ -95,14 +95,14 @@ const UserBookings = ({ movieId }: { movieId: number }) => {
         <span className="font-semibold">Show time:</span> {new Date(booking.show_time).toLocaleString()}<br />
         <span className="font-semibold">Seat:</span> {booking.seat_number}
       </div>
-      <Button
+    /*  <Button
         variant="destructive"
         size="sm"
         onClick={handleCancel}
         disabled={loading}
       >
         {loading ? "Cancelling..." : "Cancel Booking"}
-      </Button>
+      </Button> */
     </div>
   );
 };
